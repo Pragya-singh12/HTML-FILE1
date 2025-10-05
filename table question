@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Model Question Paper - Mathematics Class VIII</title>
+  <style>
+    :root{
+      --paper-bg: #f8fbff;
+      --text: #0b2340;
+      --accent: #071b33;
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: "Georgia", "Times New Roman", serif;
+      background: var(--paper-bg);
+      color: var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .container{
+      max-width:900px;
+      margin:36px auto;
+      padding:36px 48px;
+      background: white;
+      box-shadow: 0 6px 20px rgba(11,35,64,0.06);
+      border-radius:6px;
+    }
+
+    .title{
+      text-align:center;
+      line-height:1.05;
+      color:var(--accent);
+    }
+    .title h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      font-weight:700;
+      text-decoration:underline;
+    }
+    .title h2, .title h3{
+      margin:6px 0 0 0;
+      font-size:16px;
+      font-weight:700;
+      text-transform:uppercase;
+    }
+
+    .meta{
+      margin-top:18px;
+      font-size:15px;
+    }
+    .instructions{
+      margin-top:18px;
+      font-size:15px;
+      line-height:1.7;
+    }
+
+    .section-heading{
+      margin-top:26px;
+      text-align:left;
+      font-size:16px;
+      font-weight:700;
+      text-decoration:underline;
+    }
+
+    .question{
+      margin-top:18px;
+      font-size:16px;
+      line-height:1.8;
+    }
+
+    .choices{
+      margin-top:8px;
+      margin-left:28px;
+      list-style:none;
+      padding:0;
+      font-size:15px;
+    }
+    .choices li{
+      margin:6px 0;
+    }
+
+    .foot{
+      margin-top:28px;
+      font-size:13px;
+      color:#444;
+    }
+
+    /* small screens */
+    @media (max-width:520px){
+      .container{ padding:20px; margin:12px; }
+      .title h1{ font-size:18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-labelledby="paper-title">
+    <header class="title" id="paper-title">
+      <h1>Model Question Paper For Summative</h1>
+      <h2>Test - II</h2>
+      <h3>Mathematics</h3>
+      <h3>Class - VIII</h3>
+    </header>
+
+    <div class="meta">
+      <strong>Maximum Marks:</strong> 20
+    </div>
+
+    <section class="instructions" aria-label="General instructions">
+      <strong>General instructions:</strong>
+      <ol>
+        <li>All questions are compulsory.</li>
+        <li>The question paper consists of 7 questions divided into 2 sections A and B.</li>
+        <li>Section A contains 4 questions of 2 marks each.</li>
+        <li>Section B contains 3 questions of 4 marks each.</li>
+      </ol>
+    </section>
+
+    <h4 class="section-heading">SECTION A</h4>
+
+    <article class="question" id="q1" aria-labelledby="q1-label">
+      <div id="q1-label"><strong>Q1.</strong> What will be the product of <em>(a<sup>2</sup>) × (2a<sup>22</sup>) × (4a<sup>26</sup>)</em> ?</div>
+      <ul class="choices" role="list">
+        <li>(a) 8a<sup>46</sup></li>
+        <li>(b) 8a<sup>48</sup></li>
+        <li>(c) 6a<sup>50</sup></li>
+        <li>(d) 8a<sup>50</sup></li>
+      </ul>
+    </article>
+
+    <article class="question" id="q2" aria-labelledby="q2-label">
+      <div id="q2-label"><strong>Q2.</strong> Water is oxidised to oxygen by</div>
+      <ul class="choices" role="list">
+        <li>(a) H<sub>2</sub>O<sub>2</sub></li>
+        <li>(b) KMnO<sub>4</sub></li>
+        <li>(c) ClO<sub>2</sub></li>
+        <li>(d) Fluorine</li>
+      </ul>
+    </article>
+
+    <p class="foot"><em>Select only one option.</em></p>
+  </div>
+</body>
+</html>

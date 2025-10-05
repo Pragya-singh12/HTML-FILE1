@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinket</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <div class="p-9">
+        <div class="flex h-20 justify-between">
+            <div class="w-15/100 border-grey">
+                <h1 class="text-5xl text-amber-500 font-bold">blink<span class="text-5xl text-green-600 font-bold">It</span>
+                </h1>
+            </div>
+            <div>
+                <h1 class="font-Bold text-xl">Delivery in 10 minutes</h1>
+                <h6>657 model colony....&dtri;</h6>
+            </div>
+            <div></div>
+            <div class="">
+                <h1>Login</h1>
+            </div>
+            <div></div>
+        </div>
+        <div class= "text-5xl">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg"
+            class="h-full"
+             alt="">
+        </div>
+        <div class="flex">
+            <div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/pharmacy-WEB.jpg"
+                class="h-50 w-80 p-5"
+                alt="">
+            </div>
+            <div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"
+                class="h-50 w-90 p-5"
+                 alt="">
+            </div>
+            <div class="">
+               <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-03/babycare-WEB.jpg" 
+               class="h-50 w-90 p-5"
+               alt=""> 
+            </div>
+        </div>
+        <div class="">
+            <div class="flex">
+                <div class="bg-blue-100 h-20 border-white w-30 rounded-xl">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png" alt="">
+                </div>
+                <div class="h-34 border-white w-30 rounded-3xl">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png" alt="">
+                </div>
+                <div class="h-34 border-white w-30 rounded-3xl">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png" alt="">
+                </div>
+              <div class="h-34 border-white w-30 rounded-3xl">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-4_9.png" alt="">
+              </div>
+               <div class="h-34 border-white w-30 rounded-3xl">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png" alt="">
+               </div>
+               <div class="h-34 border-white w-30 rounded-3xl">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-6_5.png" alt="">
+               </div>
+               <div class="h-34 border-white w-30 rounded-3xl">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png" alt="">
+               </div>
+               <div class="h-34 border-white w-30 rounded-3xl">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png" alt="">
+               </div>
+               <div class="h-34 border-white w-30 rounded-3xl">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png" alt="">
+               </div>
+                <div class="h-34 border-white w-30 rounded-3xl">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-9_3.png" alt="">
+                </div>
+                <div class="h-34 border-white w-30 rounded-3xl">
+                    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-10.png" alt="">
+                </div>
+            </div>
+            <div class="mt-15">
+                <h1 class="font-bold text-xl">Dairy Products</h1>
+                <div class="flex flex-wrap gap-15">
+                    <div class="h-24 border-green w-30 mt-5">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png" alt="">
+                        <p>10 mins</p>
+                        <p>Amul Taza Toned milk</p>
+                        <h5>500ml</h5>
+                        <div class="flex justify-between">
+                            <h4>$29</h4>
+                            <div class="bg-green-500 px-3 py-1">Add</div>
+
+                        </div>
+                    </div>
+                    <div class="h-24 border-green w-30 mt-5">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png" alt="">
+                        <p>10 mins</p>
+                        <p>Amul Taza Toned milk</p>
+                        <h5>500ml</h5>
+                        <div class="flex justify-between">
+                            <h4>$29</h4>
+                            <div class="bg-green-500 px-3 py-1">Add</div>
+
+                        </div>
+                    </div>
+                    <div class="h-24  border-green w-30 mt-5">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png" alt="">
+                        <p>10 mins</p>
+                        <p>Amul Taza Toned milk</p>
+                        <h5>500ml</h5>
+                        <div class="flex justify-between">
+                            <h4>$29</h4>
+                            <div class="bg-green-500 px-3 py-1">Add</div>
+
+                        </div>
+                    </div>
+                    <div class="h-24  border-green w-30 mt-5">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png" alt="">
+                        <p>10 mins</p>
+                        <p>Amul Taza Toned milk</p>
+                        <h5>500ml</h5>
+                        <div class="flex justify-between">
+                            <h4>$29</h4>
+                            <div class="bg-green-500 px-3 py-1">Add</div>
+
+                        </div>
+                    </div>
+                    <div class="h-24  border-grey w-30 mt-5">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png" alt="">
+                        <p>10 mins</p>
+                        <p>Amul Taza Toned milk</p>
+                        <h5>500ml</h5>
+                        <div class="flex justify-between">
+                            <h4>$29</h4>
+                            <div class="bg-green-500 px-3 py-1">Add</div>
+
+                        </div>
+                    </div>
+                    <div class="h-24 border-grey w-30 mt-5">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png" alt="">
+                        <p>10 mins</p>
+                        <p>Amul Taza Toned milk</p>
+                        <h5>500ml</h5>
+                        <div class="flex justify-between">
+                            <h4>$29</h4>
+                            <div class="bg-green-500 px-3 py-1">Add</div>
+
+                        </div>
+                    </div>
+                    <div class="h-24 border-grey w-30 mt-5">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png" alt="">
+                        <p>10 mins</p>
+                        <p>Amul Taza Toned milk</p>
+                        <h5>500ml</h5>
+                        <div class="flex justify-between">
+                            <h4>$29</h4>
+                            <div class="bg-green-500 px-3 py-1">Add</div>
+
+                        </div>
+                    </div>
+                    <div class="h-24 border-grey w-30 mt-5">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png" alt="">
+                        <p>10 mins</p>
+                        <p>Amul Taza Toned milk</p>
+                        <h5>500ml</h5>
+                        <div class="flex justify-between">
+                            <h4>$29</h4>
+                            <div class="bg-green-500 px-3 py-1">Add</div>
+
+                        </div>
+                    </div>
+                    <div class="h-24 border-grey w-30 mt-30">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png" alt="">
+                        <p>10 mins</p>
+                        <p>Amul Taza Toned milk</p>
+                        <h5>500ml</h5>
+                        <div class="flex justify-between">
+                            <h4>$29</h4>
+                            <div class="bg-green-500 px-3 py-1">Add</div>
+
+                        </div>
+                    </div>
+                    
+                        <div class="h-24 border-grey w-30 mt-30">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png" alt="">
+                        <p>10 mins</p>
+                        <p>Amul Taza Toned milk</p>
+                        <h5>500ml</h5>
+                        <div class="flex justify-between">
+                            <h4>$29</h4>
+                            <div class="bg-green-500 px-3 py-1">Add</div>
+
+                        </div>
+                    </div>
+                    
+                        <div class="h-24 border-grey w-30 mt-30">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png" alt="">
+                        <p>10 mins</p>
+                        <p>Amul Taza Toned milk</p>
+                        <h5>500ml</h5>
+                        <div class="flex justify-between">
+                            <h4>$29</h4>
+                            <div class="bg-green-500 px-3 py-1">Add</div>
+
+                        </div>
+                    </div>
+                    
+                        <div class="h-24 border-grey w-30 mt-30">
+                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png" alt="">
+                        <p>10 mins</p>
+                        <p>Amul Taza Toned milk</p>
+                        <h5>500ml</h5>
+                        <div class="flex justify-between">
+                            <h4>$29</h4>
+                            <div class="bg-green-500 px-3 py-1">Add</div>
+
+                        </div>
+                    </div>
+                    
+                    
+                   
+                </div>
+            </div>
+</body>
+</html>

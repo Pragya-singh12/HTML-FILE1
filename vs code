@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code UI Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vscode: {
+                            dark: '#1e1e1e',
+                            sidebar: '#333333',
+                            active: '#2d2d2d',
+                            highlight: '#37373d',
+                            border: '#454545',
+                            tab: '#252526',
+                            text: '#cccccc',
+                            icon: '#858585',
+                            activeTab: '#1e1e1e',
+                            statusBar: '#007acc',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #424242;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #4f4f4f;
+        }
+        
+       
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        
+    
+        .no-scrollbar {
+            -ms-overflow-style: none;  
+            scrollbar-width: none;  
+        }
+        
+        
+        @font-face {
+            font-family: 'Cascadia Code';
+            src: url('https://cdn.jsdelivr.net/gh/microsoft/cascadia-code@main/fonts/static/CascadiaCode-Regular.ttf') format('truetype');
+        }
+        
+        
+        ::selection {
+            background: #264f78;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-vscode-dark text-vscode-text font-mono overflow-hidden h-screen flex flex-col">
+    
+    <div class="bg-vscode-sidebar h-8 flex items-center px-4 justify-between text-sm">
+        <div class="flex items-center">
+            <i class="fas fa-code text-vscode-status-bar mr-3"></i>
+            <span>File</span>
+            <span class="ml-4">Edit</span>
+            <span class="ml-4">Selection</span>
+            <span class="ml-4">View</span>
+            <span class="ml-4">Go</span>
+            <span class="ml-4">Run</span>
+            <span class="ml-4">Terminal</span>
+            <span class="ml-4">Help</span>
+        </div>
+        <div class="flex items-center">
+            <span class="text-xs">Visual Studio Code</span>
+        </div>
+        <div class="flex items-center">
+            <button class="w-10 h-8 hover:bg-vscode-highlight flex items-center justify-center">−</button>
+            <button class="w-10 h-8 hover:bg-vscode-highlight flex items-center justify-center">◻</button>
+            <button class="w-10 h-8 hover:bg-red-700 flex items-center justify-center">×</button>
+        </div>
+    </div>
+
+    <div class="flex flex-1 overflow-hidden">
+        
+        <div class="bg-vscode-sidebar w-12 flex flex-col items-center py-3">
+            <div class="mb-4 p-2 hover:bg-vscode-highlight rounded cursor-pointer text-vscode-status-bar">
+                <i class="fas fa-folder-open text-lg"></i>
+            </div>
+            <div class="mb-4 p-2 hover:bg-vscode-highlight rounded cursor-pointer">
+                <i class="fas fa-search text-lg"></i>
+            </div>
+            <div class="mb-4 p-2 hover:bg-vscode-highlight rounded cursor-pointer">
+                <i class="fas fa-code-branch text-lg"></i>
+            </div>
+            <div class="mb-4 p-2 hover:bg-vscode-highlight rounded cursor-pointer">
+                <i class="fas fa-bug text-lg"></i>
+            </div>
+            <div class="mb-4 p-2 hover:bg-vscode-highlight rounded cursor-pointer">
+                <i class="fas fa-puzzle-piece text-lg"></i>
+            </div>
+            <div class="mt-auto mb-4 p-2 hover:bg-vscode-highlight rounded cursor-pointer">
+                <i class="fas fa-user text-lg"></i>
+            </div>
+            <div class="p-2 hover:bg-vscode-highlight rounded cursor-pointer">
+                <i class="fas fa-cog text-lg"></i>
+            </div>
+        </div>
+
+       
+        <div class="bg-vscode-sidebar w-64 flex flex-col border-r border-vscode-border">
+            <div class="p-3 border-b border-vscode-border">
+                <span>EXPLORER</span>
+            </div>
+            <div class="flex-1 overflow-y-auto custom-scrollbar">
+                <div class="py-1">
+                    <div class="flex items-center px-2 py-1 hover:bg-vscode-highlight cursor-pointer">
+                        <i class="fas fa-chevron-down mr-1 text-xs"></i>
+                        <span>OPEN EDITORS</span>
+                    </div>
+                    <div class="ml-4 py-1">
+                        <div class="flex items-center px-2 py-1 hover:bg-vscode-highlight cursor-pointer text-vscode-icon">
+                            <i class="fas fa-file-code mr-2 text-blue-400"></i>
+                            <span>index.html</span>
+                        </div>
+                        <div class="flex items-center px-2 py-1 hover:bg-vscode-highlight cursor-pointer text-vscode-icon">
+                            <i class="fas fa-file-code mr-2 text-yellow-400"></i>
+                            <span>styles.css</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-1">
+                    <div class="flex items-center px-2 py-1 hover:bg-vscode-highlight cursor-pointer">
+                        <i class="fas fa-chevron-down mr-1 text-xs"></i>
+                        <span>VS-CODE-CLONE</span>
+                    </div>
+                    <div class="ml-4 py-1">
+                        <div class="flex items-center px-2 py-1 hover:bg-vscode-highlight cursor-pointer text-vscode-icon">
+                            <i class="fas fa-folder mr-2 text-vscode-icon"></i>
+                            <span>public</span>
+                        </div>
+                        <div class="flex items-center px-2 py-1 hover:bg-vscode-highlight cursor-pointer text-vscode-icon">
+                            <i class="fas fa-folder mr-2 text-vscode-icon"></i>
+                            <span>src</span>
+                        </div>
+                        <div class="flex items-center px-2 py-1 hover:bg-vscode-highlight cursor-pointer text-blue-400">
+                            <i class="fas fa-file-code mr-2"></i>
+                            <span>index.html</span>
+                        </div>
+                        <div class="flex items-center px-2 py-1 hover:bg-vscode-highlight cursor-pointer text-yellow-400">
+                            <i class="fas fa-file-code mr-2"></i>
+                            <span>styles.css</span>
+                        </div>
+                        <div class="flex items-center px-2 py-1 hover:bg-vscode-highlight cursor-pointer text-green-400">
+                            <i class="fas fa-file-code mr-2"></i>
+                            <span>app.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="flex-1 flex flex-col overflow-hidden">
+            
+            <div class="bg-vscode-tab flex border-b border-vscode-border">
+                <div class="flex items-center px-4 py-2 bg-vscode-activeTab border-r border-vscode-border">
+                    <i class="fas fa-file-code mr-2 text-blue-400"></i>
+                    <span>index.html</span>
+                    <button class="ml-2 text-vscode-icon hover:bg-vscode-highlight rounded px-1">
+                        <i class="fas fa-times text-xs"></i>
+                    </button>
+                </div>
+                <div class="flex items-center px-4 py-2">
+                    <i class="fas fa-file-code mr-2 text-yellow-400"></i>
+                    <span>styles.css</span>
+                    <button class="ml-2 text-vscode-icon hover:bg-vscode-highlight rounded px-1">
+                        <i class="fas fa-times text-xs"></i>
+                    </button>
+                </div>
+                <div class="flex items-center px-4 py-2">
+                    <i class="fas fa-file-code mr-2 text-green-400"></i>
+                    <span>app.js</span>
+                    <button class="ml-2 text-vscode-icon hover:bg-vscode-highlight rounded px-1">
+                        <i class="fas fa-times text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="flex-1 overflow-auto custom-scrollbar p-4" id="editor">
+                <div class="font-['Cascadia_Code'] text-sm leading-relaxed whitespace-pre">
+                  
+                    <div class="flex">
+                        <div class="text-vscode-icon text-right pr-4 select-none">
+                            1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20
+                        </div>
+                        <div class="flex-1">
+                            <div class="text-blue-400">&lt;!DOCTYPE html&gt;</div>
+                            <div class="text-blue-400">&lt;html lang="en"&gt;</div>
+                            <div class="text-blue-400">&lt;head&gt;</div>
+                            <div class="ml-4 text-blue-400">&lt;meta charset="UTF-8"&gt;</div>
+                            <div class="ml-4 text-blue-400">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</div>
+                            <div class="ml-4 text-blue-400">&lt;title&gt;My Project&lt;/title&gt;</div>
+                            <div class="ml-4 text-blue-400">&lt;link rel="stylesheet" href="styles.css"&gt;</div>
+                            <div class="text-blue-400">&lt;/head&gt;</div>
+                            <div class="text-blue-400">&lt;body&gt;</div>
+                            <div class="ml-4 text-yellow-400">&lt;div class="container"&gt;</div>
+                            <div class="ml-8 text-purple-400">&lt;h1&gt;</div>
+                            <div class="ml-12">Welcome to My Project</div>
+                            <div class="ml-8 text-purple-400">&lt;/h1&gt;</div>
+                            <div class="ml-8 text-purple-400">&lt;p&gt;</div>
+                            <div class="ml-12">This is a sample project showcasing VS Code UI design.</div>
+                            <div class="ml-8 text-purple-400">&lt;/p&gt;</div>
+                            <div class="ml-4 text-yellow-400">&lt;/div&gt;</div>
+                            <div class="ml-4 text-blue-400">&lt;script src="app.js"&gt;&lt;/script&gt;</div>
+                            <div class="text-blue-400">&lt;/body&gt;</div>
+                            <div class="text-blue-400">&lt;/html&gt;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="bg-vscode-status-bar h-6 flex items-center justify-between px-3 text-xs">
+        <div class="flex items-center">
+            <i class="fas fa-code-branch mr-2"></i>
+            <span>main</span>
+            <i class="fas fa-sync-alt ml-3 mr-2"></i>
+            <i class="fas fa-bell ml-3"></i>
+        </div>
+        <div class="flex items-center">
+            <span class="mr-4">Ln 20, Col 25</span>
+            <span class="mr-4">Spaces: 4</span>
+            <span class="mr-4">UTF-8</span>
+            <span class="mr-4">HTML</span>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const editor = document.getElementById('editor');
+            const fileTabs = document.querySelectorAll('.flex.items-center.px-4.py-2');
+            fileTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const fileName = this.querySelector('span').textContent;
+                    alert(`You clicked on the ${fileName} tab`);
+                });
+            });
+            editor.addEventListener('dblclick', function() {
+                alert('You can edit code in this area in a real VS Code implementation');
+            });
+            document.querySelector('.fa-terminal').addEventListener('click', function() {
+                alert('Terminal would open here in a real implementation');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT Clone (All Black Theme)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    
+    .top-bar {
+      height: 40px;
+      background: #1f1f1f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+      font-weight: bold;
+      color: white;
+      user-select: none;
+      border-bottom: 1px solid #333;
+    }
+
+    .top-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .chatgpt-symbol {
+      font-size: 18px;
+    }
+
+    .top-right {
+      display: flex;
+      gap: 15px;
+    }
+
+    .window-btn {
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      user-select: none;
+    }
+
+    .window-btn:hover {
+      color: #ff5555;
+    }
+
+   
+    .layout {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+    }
+
+   
+    .sidebar {
+      width: 280px;
+      background: #0d0d0d;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #222;
+    }
+
+    .chat-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .chat-item {
+      padding: 12px;
+      background: #111;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .chat-item:hover {
+      background: #222;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: #000;
+      text-align: left;
+    }
+
+    .chat-container {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .chatgpt-text {
+      text-align: left;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #fff;
+      background: none;
+      padding: 0;
+      margin: 0 auto;
+    }
+
+   
+    .input-container {
+      padding: 15px;
+      background: #0d0d0d;
+      border-top: 1px solid #222;
+    }
+
+    .input-form {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      gap: 10px;
+    }
+
+    .message-input {
+      flex: 1;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 12px 15px;
+      color: #fff;
+      font-size: 1rem;
+      resize: none;
+      min-height: 50px;
+    }
+
+    
+    .upgrade-btn {
+      display: block;
+      max-width: 200px;
+      margin: 10px auto;
+      padding: 10px 15px;
+      text-align: center;
+      background: #111;
+      color: #fff;
+      border: 1px solid #333;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .upgrade-btn:hover {
+      background: #222;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="top-left">
+      <span class="chatgpt-symbol"></span> ChatGPT
+    </div>
+    <div class="top-right">
+      <div class="window-btn">–</div>
+      <div class="window-btn">□</div>
+      <div class="window-btn">×</div>
+    </div>
+  </div>
+
+  
+  <div class="layout">
+    
+    <div class="sidebar">
+      <div class="chat-list">
+        <div class="chat-item">New chat</div>
+        <div class="chat-item">Libaray</div>
+        <div class="chat-item">sora</div>
+        <div class="chat-item">GPT's</div>
+        <div class="chat-item">Chat</div>
+      </div>
+    </div>
+
+    
+    <div class="main">
+      <main class="chat-container">
+         <div class="chatgpt-text">CHATGPT</div>
+        <a href="#" class="upgrade-btn">Upgrade to Go</a>
+      </main>
+
+      
+      <div class="input-container">
+        <form class="input-form">
+          <textarea class="message-input" placeholder="Message ChatGPT..."></textarea>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
